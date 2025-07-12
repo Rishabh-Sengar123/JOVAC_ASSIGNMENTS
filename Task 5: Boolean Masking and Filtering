@@ -1,0 +1,11 @@
+arr = np.random.randint(10, 51, 15)
+
+print("Elements > 25:", arr[arr > 25])
+
+
+arr_mod = arr.copy()
+arr_mod[arr_mod < 30] = 0
+print("Elements < 30 replaced with 0:", arr_mod)
+
+
+print("Count divisible by 5:", np.sum(arr % 5 == 0))
