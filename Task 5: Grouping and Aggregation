@@ -1,0 +1,5 @@
+
+grouped = df.groupby('Gender').agg({'Age': 'mean', 'Marks': 'mean'})
+print(grouped)
+
+print(df['Gender'].value_counts())
