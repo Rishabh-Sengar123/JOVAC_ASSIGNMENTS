@@ -1,0 +1,14 @@
+arr = np.arange(1, 13)
+
+
+arr_2d = arr.reshape(4, 3)
+print("2D array:\n", arr_2d)
+
+
+arr_3d = arr.reshape(2, 2, 3)
+print("3D array:\n", arr_3d)
+
+
+arr_2d_T = arr_2d.T
+print("Transposed 2D array:\n", arr_2d_T)
+print("Shape:", arr_2d_T.shape)
