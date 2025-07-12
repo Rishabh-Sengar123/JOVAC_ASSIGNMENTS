@@ -1,0 +1,5 @@
+print(df[['Name', 'Marks']])
+
+print(df[df['Marks'] > 80])
+
+print(df.loc[df['Marks'].idxmax()])
