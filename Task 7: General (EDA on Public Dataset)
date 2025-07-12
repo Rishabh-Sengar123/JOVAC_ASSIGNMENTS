@@ -1,0 +1,17 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+titanic = sns.load_dataset('titanic')
+
+
+print(titanic.describe(include='all'))
+
+print(titanic.isnull().sum())
+
+sns.countplot(x='class', data=titanic)
+plt.title('Passenger Class Distribution')
+plt.show()
+
+sns.histplot(titanic['age'].dropna(), bins=20)
+plt.title('Age Distribution')
+plt.show()
