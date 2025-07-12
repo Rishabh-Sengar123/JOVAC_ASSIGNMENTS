@@ -1,0 +1,11 @@
+eq_space = np.linspace(0, 1, 10)
+print("Equally spaced:", eq_space)
+
+identity = np.eye(4)
+print("Identity matrix:\n", identity)
+
+
+rand_arr = np.random.randint(1, 101, 20)
+rand_arr_sorted = np.sort(rand_arr)
+print("Sorted array:", rand_arr_sorted)
+print("5 largest:", rand_arr_sorted[-5:])
