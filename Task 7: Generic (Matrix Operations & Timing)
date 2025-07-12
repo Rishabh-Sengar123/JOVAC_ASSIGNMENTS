@@ -1,0 +1,16 @@
+import time
+
+A = np.random.rand(100, 100)
+B = np.random.rand(100, 100)
+
+start = time.time()
+
+C = np.dot(A, B)
+# Determinant and inverse (if possible)
+det = np.linalg.det(C)
+inv = np.linalg.inv(C) if det != 0 else None
+end = time.time()
+
+print("Time taken (seconds):", end - start)
+print("Determinant:", det)
+print("Inverse exists:", inv is not None)
