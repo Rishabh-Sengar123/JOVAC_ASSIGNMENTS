@@ -1,0 +1,12 @@
+df.loc[1, 'Marks'] = None
+df.loc[4, 'Age'] = None
+
+
+print("Missing values:\n", df.isnull())
+
+
+df['Marks'].fillna(df['Marks'].mean(), inplace=True)
+
+
+df_dropped = df.dropna(subset=['Age'])
+print(df_dropped)
