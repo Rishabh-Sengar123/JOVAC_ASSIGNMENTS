@@ -1,0 +1,17 @@
+import numpy as np
+
+# 1D array of 10 integers (1 to 10)
+arr1d = np.arange(1, 11)
+print("1D Array:", arr1d)
+
+# 2D array of shape (3, 3) with integers 1 to 9
+arr2d = np.arange(1, 10).reshape(3, 3)
+print("2D Array:\n", arr2d)
+
+# 3D array with random floats, shape (3, 5, 3)
+arr3d = np.random.rand(3, 5, 3)
+print("3D Array:\n", arr3d)
+
+# Display shape, size, and dtype
+for arr in [arr1d, arr2d, arr3d]:
+    print(f"Shape: {arr.shape}, Size: {arr.size}, Dtype: {arr.dtype}")
