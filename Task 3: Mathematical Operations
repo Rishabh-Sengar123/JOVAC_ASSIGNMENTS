@@ -1,0 +1,20 @@
+A = np.random.randint(1, 21, 5)
+B = np.random.randint(1, 21, 5)
+
+
+print("A+B:", A+B)
+print("A-B:", A-B)
+print("A*B:", A*B)
+print("A/B:", A/B)
+
+
+print("Dot product:", np.dot(A, B))
+
+
+print("Mean:", np.mean(A))
+print("Median:", np.median(A))
+print("Std Dev:", np.std(A))
+print("Variance:", np.var(A))
+
+print("Max in B:", np.max(B), "at index", np.argmax(B))
+print("Min in B:", np.min(B), "at index", np.argmin(B))
