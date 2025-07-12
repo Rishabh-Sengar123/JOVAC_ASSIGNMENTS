@@ -1,0 +1,5 @@
+df.to_csv('students_data.csv', index=False)
+
+
+df_new = pd.read_csv('students_data.csv')
+print(df_new.head())
